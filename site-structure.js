@@ -36,6 +36,15 @@ window.addEventListener('load', () => {
     }
 });
 
+// ========== FAVICON INJECTION ==========
+(function() {
+    const favicon = document.createElement('link');
+    favicon.rel = 'icon';
+    favicon.type = 'image/png';
+    favicon.href = 'CottonCraft_Logo_Blue.png';
+    document.head.appendChild(favicon);
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
     // Inject Header
     const headerEl = document.getElementById('global-header');
