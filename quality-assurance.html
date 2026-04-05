@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Quality Assurance | Cotton Craft</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200..900&family=Red+Hat+Display:wght@700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#006096",
+                        "primary-container": "#0c7abb",
+                        "secondary": "#3a59b2",
+                        "tertiary": "#b90d1d",
+                        "background": "#faf8ff",
+                        "surface": "#faf8ff",
+                        "on-surface": "#181b25",
+                        "on-surface-variant": "#404750",
+                        "outline": "#707881",
+                        "outline-variant": "#c0c7d2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Red Hat Display"],
+                        "body": ["Lexend Deca"],
+                        "label": ["Lexend Deca"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-sheet { background: rgba(224, 225, 240, 0.4); backdrop-filter: blur(12px); }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/20">
+    <!-- TopNavBar -->
+    <header id="global-header"></header>
+
+    <main>
+        <!-- Hero Section: Editorial Style -->
+        <section class="relative min-h-[716px] flex items-center overflow-hidden bg-slate-50">
+            <div class="absolute inset-0 z-0">
+                <img alt="Fabric Texture" class="w-full h-full object-cover grayscale opacity-20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJLKquOKRhveSQAwjfeskruVQk0_GEnMtJWJJy7jNYxS7cq6-JIshMX3gxGfb9oFGNeNiwSZO4fgnjhAqr6-pMln-qM6bL4_jeRGnTdeUqFjjniSLWLhoK1Tk2K9UgHD1vEP6_WNUPZRsFkTBfyaf3vdOioCbvnvK29yePGqeAgdGUWmxYuImMFQyjOeFm_Vhhd7nNndnjYFYn8dpNtNYT3MaS-vPAbKjX1jZuPrtISzVr4Chk5rIURTI3q_FiFbW9cPYXYqtA"/>
+                <div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
+            </div>
+            <div class="max-w-7xl mx-auto px-6 w-full grid md:grid-cols-2 gap-12 relative z-10 py-24">
+                <div class="flex flex-col justify-center space-y-8">
+                    <div class="space-y-2">
+                        <span class="font-label uppercase text-xs font-bold tracking-[0.2em] text-primary">Uncompromising Standards</span>
+                        <h1 class="text-6xl md:text-8xl font-headline font-extrabold tracking-tighter text-on-surface leading-[0.9]">Precision <br/>In Every <br/><span class="text-primary italic font-light">Fiber.</span></h1>
+                    </div>
+                    <p class="text-xl text-on-surface-variant leading-relaxed max-w-lg">
+                        Our Zero-Defect commitment is more than a slogan. It is a systematic orchestration of engineering precision, rigorous laboratory testing, and the eagle-eyed scrutiny of master artisans.
+                    </p>
+                </div>
+                <div class="hidden md:flex items-end justify-end">
+                    <div class="glass-sheet p-8 rounded-xl border border-outline-variant/20 shadow-2xl max-w-xs">
+                        <div class="space-y-4">
+                            <span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">verified</span>
+                            <h3 class="font-headline font-bold text-lg text-on-surface">Global Certification</h3>
+                            <p class="text-sm text-on-surface-variant italic">"We hold ourselves to the ISO 9001:2015 standard, ensuring every square meter meets international excellence."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rigorous Testing Protocols -->
+        <section class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="mb-16 text-center">
+                    <h2 class="text-4xl font-headline font-bold tracking-tight mb-4 text-on-surface">Rigorous Testing Protocols</h2>
+                    <div class="w-20 h-1 bg-primary mx-auto"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-6 h-auto md:h-[800px]">
+                    <!-- Abrasion Resistance -->
+                    <div class="md:col-span-1 md:row-span-2 bg-slate-50 p-8 rounded-xl border border-slate-100 flex flex-col justify-between group">
+                        <div class="space-y-6">
+                            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-primary">texture</span>
+                            </div>
+                            <h3 class="text-2xl font-headline font-bold text-on-surface">Abrasion Resistance</h3>
+                            <p class="text-on-surface-variant leading-relaxed">Using the Martindale and Wyzenbeek methods, we subject our fabrics to up to 100,000 double rubs to ensure lifelong durability.</p>
+                        </div>
+                        <img alt="Testing Equipment" class="rounded-lg h-48 object-cover mt-8 grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5EvpCprAlewnqmYBGFjvUNV-AmNlipWhyEqn87MfOgfhzwUZzOAt3lbKiPjINEcFM9mIB2CqInkkV6l8yj4corFGZYQqErcJuP7CAaRGMtA5vvMZ2wbAoDgx3wXVU76Nu49LneuySV6y_GuXj99wkd12xeH2jedMeoSy3ZnkqFc5bLZ2oODJTrIuO9plfc7iWkJI1xMx2LDiqYXR_OyiQfNYcyFU4d-_Bzp2nh7z9GVL-G7H7tBkmdM5mLjcXnKGmT19Vj2QG"/>
+                    </div>
+                    <!-- Colorfastness -->
+                    <div class="md:col-span-2 md:row-span-1 bg-slate-50 p-8 rounded-xl border border-slate-100 grid md:grid-cols-2 gap-8 items-center overflow-hidden">
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 rounded-full bg-tertiary/10 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-tertiary">palette</span>
+                            </div>
+                            <h3 class="text-2xl font-headline font-bold text-on-surface">Colorfastness &amp; UV Stability</h3>
+                            <p class="text-on-surface-variant leading-relaxed">Our dyes are tested for crocking, perspiration, and simulated sunlight exposure, ensuring vibrant aesthetics that do not fade.</p>
+                        </div>
+                        <div class="h-full min-h-[200px] relative">
+                            <img alt="Color Samples" class="absolute inset-0 w-full h-full object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJZMRBfFLasLFLpWw9hyh9_kW5sQPSVZpLngHndRL0Y3Fgu3EXFy8osfC559kmFrJifWU9aDYoqYtfkxK7u4J1kJRNXFd6JQ5MGsYuUFXDk5G6bfR8CVH-wuaW9w4olkAZVzTjhkPE4Uy9YLL-jqCyBlClcpH15qPbcdmyWiEG1xr_-_ff3oxX4_DIi9XYqcZRne3jmQ3K1ngJzxKx0MK8GsQ0a7fBFszfQ2z_d8GMn-TfYClTJaEMlon7n1hn4r8_gxxpIypC"/>
+                        </div>
+                    </div>
+                    <!-- Tensile Strength -->
+                    <div class="md:col-span-1 md:row-span-1 bg-primary text-white p-8 rounded-xl flex flex-col justify-center">
+                        <span class="material-symbols-outlined text-4xl mb-4">fitness_center</span>
+                        <h3 class="text-2xl font-headline font-bold mb-4">Tensile Strength</h3>
+                        <p class="text-xs font-label uppercase tracking-widest font-bold opacity-80">Breaking point analysis ensures structural integrity under extreme industrial pressure.</p>
+                    </div>
+                    <!-- Dimensional Stability -->
+                    <div class="md:col-span-1 md:row-span-1 bg-slate-900 p-8 rounded-xl flex flex-col justify-center border border-white/10">
+                        <h3 class="text-2xl font-headline font-bold mb-4 text-white">Dimensional Stability</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed italic">"Measuring shrinkage and growth to within 0.5% tolerance after repeated industrial steaming."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Master artisans Section -->
+        <section class="py-24 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-5 relative">
+                    <div class="absolute -top-12 -left-12 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+                    <img alt="Artisan at work" class="rounded-2xl shadow-2xl relative z-10 w-full aspect-[4/5] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCd64NGgjVTYFHHtnt7Rtdr7JJZKwbixU8E40Z1WN6_1k552w3LjOd4IxSgZpDqjWLmiaQV9i1gLjmdjIG3_de9031VcCQkd4ZPbPOwclOVVkvW_bpHqkj9Ji6wzXs7Mp0FjHiDxsj27WrhmtT5b-3ML76Ak35H99yHOsPymFOzwgF5FSmp58qtxERHd11h_ZM6ULZHcaKOFxBpX7RCwi6lDvRwVsPYn7PKyq8_9gJY6jt1ION1iykv2ywRVFGe7jga5Oc9CjZn"/>
+                    <div class="absolute -bottom-6 -right-6 bg-secondary p-6 rounded-xl z-20 text-white shadow-xl hidden md:block">
+                        <p class="font-headline font-bold text-4xl">30+</p>
+                        <p class="font-label text-[10px] uppercase font-bold tracking-widest">Years of Expertise</p>
+                    </div>
+                </div>
+                <div class="md:col-span-7 space-y-10 pl-0 md:pl-12">
+                    <div class="space-y-4">
+                        <span class="font-label uppercase text-xs font-bold tracking-[0.2em] text-secondary">The Human Element</span>
+                        <h2 class="text-5xl font-headline font-bold tracking-tighter leading-tight text-on-surface">Mastering the Science <br/>of Craft.</h2>
+                    </div>
+                    <p class="text-lg text-on-surface-variant leading-relaxed">
+                        While our automated sensors detect micro-flaws, our master artisans provide the final layer of validation. With decades of experience, they understand the "hand" of a fabric in ways a machine cannot.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-6">
+                        <div class="flex gap-4">
+                            <span class="material-symbols-outlined text-primary text-3xl">science</span>
+                            <div class="space-y-1">
+                                <h4 class="font-headline font-bold text-on-surface">In-House QA Lab</h4>
+                                <p class="text-sm text-on-surface-variant">24/7 climate-controlled testing environment.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <span class="material-symbols-outlined text-primary text-3xl">groups</span>
+                            <div class="space-y-1">
+                                <h4 class="font-headline font-bold text-on-surface">Expert Panel</h4>
+                                <p class="text-sm text-on-surface-variant">Each batch signed off by a Senior Inspector.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Zero Defect Banner -->
+        <section class="py-20 bg-slate-900 text-white text-center relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <div class="grid grid-cols-12 h-full">
+                    <div class="border-r border-white/20"></div><div class="border-r border-white/20"></div><div class="border-r border-white/20"></div><div class="border-r border-white/20"></div><div class="border-r border-white/20"></div><div class="border-r border-white/20"></div><div class="border-r border-white/20"></div><div class="border-r border-white/20"></div><div class="border-r border-white/20"></div><div class="border-r border-white/20"></div><div class="border-r border-white/20"></div><div class=""></div>
+                </div>
+            </div>
+            <div class="relative z-10 px-6">
+                <h2 class="text-3xl md:text-5xl font-headline font-bold mb-6 italic">"Zero Defect is our Baseline, not our Goal."</h2>
+                <div class="flex flex-wrap justify-center gap-12 mt-12">
+                    <div class="text-center">
+                        <p class="text-4xl font-headline font-extrabold text-primary">99.9%</p>
+                        <p class="font-label text-[10px] uppercase font-bold tracking-widest text-slate-400">Order Accuracy</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-4xl font-headline font-extrabold text-primary">ISO</p>
+                        <p class="font-label text-[10px] uppercase font-bold tracking-widest text-slate-400">Certified Facility</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-4xl font-headline font-extrabold text-primary">100+</p>
+                        <p class="font-label text-[10px] uppercase font-bold tracking-widest text-slate-400">Daily Batch Tests</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="global-footer"></footer>
+    <script src="site-structure.js"></script>
+</body>
+</html>

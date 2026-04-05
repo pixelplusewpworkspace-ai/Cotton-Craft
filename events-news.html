@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200..900&family=Red+Hat+Display:wght@700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#d8d9e7",
+                    "surface-container-highest": "#e0e1f0",
+                    "surface-variant": "#e0e1f0",
+                    "on-tertiary": "#ffffff",
+                    "inverse-on-surface": "#eff0fe",
+                    "error-container": "#ffdad6",
+                    "outline": "#707881",
+                    "surface-bright": "#faf8ff",
+                    "tertiary-fixed-dim": "#ffb3ad",
+                    "secondary-container": "#85a2ff",
+                    "on-primary": "#ffffff",
+                    "background": "#faf8ff",
+                    "on-secondary-fixed-variant": "#1d4098",
+                    "inverse-primary": "#96ccff",
+                    "on-tertiary-fixed-variant": "#930012",
+                    "on-surface": "#181b25",
+                    "on-surface-variant": "#404750",
+                    "surface-tint": "#00639a",
+                    "on-tertiary-fixed": "#410003",
+                    "surface": "#faf8ff",
+                    "on-primary-fixed": "#001d32",
+                    "on-primary-fixed-variant": "#004a75",
+                    "tertiary": "#b90d1d",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed": "#dbe1ff",
+                    "on-tertiary-container": "#fffbff",
+                    "outline-variant": "#c0c7d2",
+                    "error": "#ba1a1a",
+                    "secondary-fixed-dim": "#b4c5ff",
+                    "on-secondary-fixed": "#00174c",
+                    "on-primary-container": "#fdfcff",
+                    "primary": "#006096",
+                    "primary-container": "#0c7abb",
+                    "on-secondary": "#ffffff",
+                    "surface-container-low": "#f2f3ff",
+                    "surface-container-high": "#e6e7f6",
+                    "primary-fixed": "#cee5ff",
+                    "on-error": "#ffffff",
+                    "on-background": "#181b25",
+                    "inverse-surface": "#2d303b",
+                    "on-secondary-container": "#09348d",
+                    "tertiary-fixed": "#ffdad6",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary": "#3a59b2",
+                    "primary-fixed-dim": "#96ccff",
+                    "tertiary-container": "#dd2f32",
+                    "surface-container": "#ecedfb"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Red Hat Display"],
+                    "body": ["Lexend Deca"],
+                    "label": ["Lexend Deca"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .fabric-sheet {
+            background: rgba(224, 225, 240, 0.4);
+            backdrop-filter: blur(12px);
+        }
+        .text-shadow-sm {
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header id="global-header"></header>
+
+<main>
+<!-- Hero Section -->
+<section class="relative h-[614px] flex items-center overflow-hidden bg-slate-900">
+<img alt="Industrial Loom" class="absolute inset-0 w-full h-full object-cover opacity-60" data-alt="dramatic wide shot of a modern textile manufacturing facility with large industrial looms and soft ambient natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzo-sDFHZbaOXOk38XcaIgUfXWVDoRGjs8s3rvZjMAN0Kv1kfceUbbyUuPXFXuZH8rsGX4xJoKAAkuCvPfWj_DdmHW2pbXPANldoWGK0qEAUUjB2_qcd2iMxWI9cWE52v0-Fucmvxahd34JC6yvVac_5nLeTT5nCwRPkZey-1WzXgH4bEr75f-6vLryRjM9ZqyqAqGaTqsKbxA--GMoG5mB9-53-rvWu3iY9XI4_Jc32A2Iep9Fw_9PqjQTSyuvjfeqc83eukv"/>
+<div class="relative max-w-7xl mx-auto px-6 w-full">
+<div class="max-w-2xl">
+<span class="inline-block font-label text-primary-fixed bg-primary/20 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-widest mb-6">Global Presence</span>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold text-white tracking-tighter leading-[1.1] mb-6">Events &amp; <br/><span class="text-primary-fixed">Innovations.</span></h1>
+<p class="text-xl text-slate-200 font-body max-w-lg leading-relaxed">
+                        Stay connected with the heartbeat of global textile manufacturing—from our new facility launches in Montreal to Sydney's sustainability summits.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Search & Filter Bar -->
+<section class="bg-surface-container-low py-8 border-b border-outline-variant/20">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex space-x-6">
+<button class="font-label text-primary font-bold border-b-2 border-primary pb-1">All Events</button>
+<button class="font-label text-on-surface-variant hover:text-primary transition-colors">Expos</button>
+<button class="font-label text-on-surface-variant hover:text-primary transition-colors">Launches</button>
+<button class="font-label text-on-surface-variant hover:text-primary transition-colors">Showcases</button>
+</div>
+<div class="relative w-full md:w-80">
+<input class="w-full bg-surface-container-lowest border-none focus:ring-2 focus:ring-primary/20 rounded-lg px-4 py-2 font-label text-sm placeholder:text-outline italic" placeholder="Search news &amp; events..." type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-2 text-outline" data-icon="search">search</span>
+</div>
+</div>
+</section>
+<!-- Main Content: Bento Grid Layout -->
+<section class="py-24 max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Featured Event Card -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="aspect-[16/9] overflow-hidden relative">
+<img alt="Montreal Facility" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="cinematic close-up of high-quality indigo denim fabric being processed on a vintage industrial loom in Montreal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg1ZY4NCns8xrASyNCdaagEgqwZ5H6eEUjvDD6wREidnEMFXPHl8tAsX7G8QbFnOPYjs3lwbzgM5z8Lryz9Aqg7H4vESWeQBUNlRuMCCd5IVLnfVV9rmd7BZx1UkI44D32AtRcGWwQev3Q_1bnUJf5WOIBTxB6UM-SKkNx_xd6O_yNvPVvJf6bxzrG9qaCy2A8Bjw0QpusJTzpFcuQWOh7p--mzLO5GbS0wSMxW_JfqBSDnI5KM96p2cSU43d57IABFfAs8HUo"/>
+<div class="absolute top-6 left-6 flex space-x-2">
+<span class="bg-primary text-white font-label text-[10px] font-bold uppercase px-3 py-1 rounded-md">Montreal</span>
+<span class="bg-white/90 backdrop-blur text-on-surface font-label text-[10px] font-bold uppercase px-3 py-1 rounded-md shadow-sm">Coming Soon</span>
+</div>
+</div>
+<div class="p-8">
+<div class="flex items-center space-x-4 mb-4">
+<span class="text-tertiary font-label text-sm font-bold tracking-tighter">OCTOBER 14, 2024</span>
+<span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+<span class="text-on-surface-variant font-label text-sm">Grand Opening</span>
+</div>
+<h3 class="text-3xl font-headline font-bold text-on-surface mb-4 leading-tight">North American Hub: Launching Montreal's Advanced Crafting Facility</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8 max-w-xl">
+                            Join us for the official ribbon-cutting ceremony of our 50,000 sq. ft. sustainable textile plant in Montreal. Featuring high-efficiency robotics and zero-waste fabric reclamation units.
+                        </p>
+<div class="flex items-center justify-between">
+<a class="inline-flex items-center text-primary font-label font-bold uppercase text-xs tracking-widest group" href="contact.html">
+                                Register for Attendance
+                                <span class="material-symbols-outlined ml-2 text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<div class="fabric-sheet p-3 rounded-lg border border-white/20">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+<span class="font-label text-xs font-semibold ml-1">Montreal, QC</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Event Card 1 -->
+<div class="md:col-span-4 bg-surface-container-high rounded-xl p-8 flex flex-col justify-between border border-outline-variant/10">
+<div>
+<div class="font-label text-xs font-bold text-primary uppercase mb-6 tracking-widest">Global Expo</div>
+<h4 class="text-2xl font-headline font-bold text-on-surface mb-4">Sydney Eco-Textile Showcase 2024</h4>
+<div class="space-y-4 mb-8">
+<div class="flex items-start space-x-3">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="calendar_today">calendar_today</span>
+<div>
+<p class="font-label text-xs font-bold text-on-surface uppercase">September 05-08</p>
+<p class="text-on-surface-variant text-sm">Main Hall, ICC Sydney</p>
+</div>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed italic mb-8">
+                            "Showcasing the intersection of organic Australian fibers and modern industrial precision."
+                        </p>
+</div>
+<button class="w-full bg-on-surface text-white py-4 rounded-lg font-label uppercase text-xs font-bold hover:bg-primary transition-colors" onclick="location.href='contact.html'">Get Tickets</button>
+</div>
+<!-- Triple Feature Grid -->
+<div class="md:col-span-4 group">
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-outline-variant/20">
+<img alt="Inventory Showcase" class="w-full h-48 object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="neatly stacked rolls of colorful high-quality fabrics in a warehouse setting with natural side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArxuNCPkurpZzg3ZWnrGRz2TWJ573R6OLtdzrnRXr1i3xfn9ysvBkOXD56aF3m9kJTTG-0d__dnXL1w27J8svZH1NMqn2Rl4pZUZRcD5Z0440z9g3qUOeGg1yxN6-uEU_kQEgyukuoDD9AVUJjb60hyZNt8NYthyFsHysa8vsnE6z2FzBp7YPDqywo26PM9T1ULHcGOYO3vTRi6GNis2P-hGBpO1v5OyLNKMlWlDVaPIkhsBXmzZOLP14ddPCPjnl5f2vvJxzO"/>
+<div class="p-6">
+<span class="text-xs font-label font-bold text-tertiary mb-2 block uppercase">Process Update</span>
+<h5 class="font-headline font-bold text-lg mb-3">Australia's New QA Standards</h5>
+<p class="text-on-surface-variant text-sm font-body line-clamp-2">How we achieved 99.9% yarn integrity in our latest Sydney production cycle.</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 group">
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-outline-variant/20">
+<img alt="Collection Preview" class="w-full h-48 object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="fashion model wearing elegant minimal design garment made of sustainable cotton, high-end editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARuxk0o9mgzoUu7TsA1ows8dVNeKE7PQvEFTjyIcEac97mvvlckQLbUIy5x_i6w4P8b_Ko2BBj55iGfbu1cozWGyX9JYWqY-7hSLwmOEpi82ofBaV_X0plpqqyqHuVvLTlTmlq_Kyc5QUqZD9li3Cg7PGrvPzZKUGwVUSuyGvJF_3p58mrxxEwIAlFLI1QhcAapGL1qBbDlNPMlQ-4JyYW2w2ehyAGllf6WE59oFN7w4Vjx0s3sSAs1ZGSk4YjRi-iMuC5Fdnc"/>
+<div class="p-6">
+<span class="text-xs font-label font-bold text-tertiary mb-2 block uppercase">Exhibition</span>
+<h5 class="font-headline font-bold text-lg mb-3">Sustainable Styles 2025</h5>
+<p class="text-on-surface-variant text-sm font-body line-clamp-2">Exclusive lookbook launch at the Toronto Garment District next month.</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 group">
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-outline-variant/20">
+<img alt="Embroidery Tech" class="w-full h-48 object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="close-up of industrial embroidery machine needle stitching intricate pattern on white luxury cotton fabric" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYhOSs_zINJ06QakRL8bOUupjtV_v93_xZyPGU33kP_iZZBABed9E0dfAA-UwCtFNkPj8pLi6Nyv36KeriYdhrmEhRj4cxsFLWCRlLGenCCeW0oK0y-UAGtnnYbebmxpS9SyiHS8MfZfsgzhRdCJ4Rgn5eF1EB7oGSTNl71lo_gOz9-TJMNTfTLwisZ3YSAu91aXAUKzXzuv9xMdgSdiiLidt8jGNwmLv-S2iI33XxVsmOafhe_SpT-4vtLiKNwON_ucBoHK4k"/>
+<div class="p-6">
+<span class="text-xs font-label font-bold text-tertiary mb-2 block uppercase">Tech Talk</span>
+<h5 class="font-headline font-bold text-lg mb-3">Precision Stitch Webinar</h5>
+<p class="text-on-surface-variant text-sm font-body line-clamp-2">Deep dive into the 3D-knitting technologies now live in our Montreal plant.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Subscribe CTA -->
+<section class="bg-primary py-24 mb-24 overflow-hidden relative">
+<div class="absolute inset-0 opacity-10">
+<div class="grid grid-cols-12 h-full">
+<div class="border-r border-white"></div><div class="border-r border-white"></div><div class="border-r border-white"></div><div class="border-r border-white"></div><div class="border-r border-white"></div><div class="border-r border-white"></div><div class="border-r border-white"></div><div class="border-r border-white"></div><div class="border-r border-white"></div><div class="border-r border-white"></div><div class="border-r border-white"></div><div class="border-r border-white"></div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-white mb-6">Stay informed on Industry Shifts.</h2>
+<p class="text-primary-fixed text-lg font-body mb-10 max-w-xl mx-auto opacity-90">Get curated insights on textile innovation, facility updates, and trade event calendars directly to your inbox.</p>
+<form class="max-w-md mx-auto flex gap-4">
+<input class="flex-grow bg-white/10 border-white/20 text-white placeholder:text-white/50 rounded-lg px-6 py-3 focus:ring-2 focus:ring-white/50" placeholder="professional@company.com" type="email"/>
+<button class="bg-white text-primary px-8 py-3 rounded-lg font-label uppercase text-xs font-bold hover:bg-primary-fixed transition-colors">Join Now</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer id="global-footer"></footer>
+<script src="site-structure.js"></script>
+</body></html>
+
+
+
+

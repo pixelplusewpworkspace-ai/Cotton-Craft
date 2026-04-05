@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200..900&family=Red+Hat+Display:wght@700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "primary": "#006096",
+                    "on-tertiary-container": "#fffbff",
+                    "on-tertiary-fixed-variant": "#930012",
+                    "error-container": "#ffdad6",
+                    "background": "#faf8ff",
+                    "outline": "#707881",
+                    "on-surface-variant": "#404750",
+                    "on-secondary-fixed-variant": "#1d4098",
+                    "on-surface": "#181b25",
+                    "tertiary": "#b90d1d",
+                    "surface-bright": "#faf8ff",
+                    "surface": "#faf8ff",
+                    "secondary": "#3a59b2",
+                    "tertiary-container": "#dd2f32",
+                    "surface-tint": "#00639a",
+                    "secondary-fixed": "#dbe1ff",
+                    "surface-variant": "#e0e1f0",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed-dim": "#96ccff",
+                    "secondary-fixed-dim": "#b4c5ff",
+                    "secondary-container": "#85a2ff",
+                    "surface-dim": "#d8d9e7",
+                    "inverse-surface": "#2d303b",
+                    "on-secondary-fixed": "#00174c",
+                    "on-error-container": "#93000a",
+                    "surface-container-high": "#e6e7f6",
+                    "on-primary-container": "#fdfcff",
+                    "inverse-primary": "#96ccff",
+                    "outline-variant": "#c0c7d2",
+                    "surface-container-low": "#f2f3ff",
+                    "on-background": "#181b25",
+                    "surface-container-highest": "#e0e1f0",
+                    "primary-container": "#0c7abb",
+                    "on-tertiary-fixed": "#410003",
+                    "tertiary-fixed": "#ffdad6",
+                    "surface-container": "#ecedfb",
+                    "on-secondary-container": "#09348d",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed-dim": "#ffb3ad",
+                    "on-primary-fixed-variant": "#004a75",
+                    "primary-fixed": "#cee5ff",
+                    "on-primary-fixed": "#001d32",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-on-surface": "#eff0fe",
+                    "on-secondary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Red Hat Display"],
+                    "body": ["Lexend Deca"],
+                    "label": ["Lexend Deca"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .fabric-sheet {
+            backdrop-filter: blur(12px);
+            background: rgba(224, 225, 240, 0.4);
+        }
+        .textile-gradient {
+            background: linear-gradient(135deg, #006096 0%, #0c7abb 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body">
+<!-- TopNavBar -->
+<header id="global-header"></header>
+<!-- Hero Section -->
+<section class="relative h-[819px] flex items-center overflow-hidden bg-surface-container-high">
+<div class="absolute inset-0 z-0">
+<img alt="Industrial Loom" class="w-full h-full object-cover opacity-40 mix-blend-multiply" data-alt="wide shot of a high-tech industrial weaving loom in a clean modern factory with blue ambient lighting and metallic textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiSBjV5GfhPWX9J8-TUp6vWU50zeNxKye5Y22BhpEfWf4HHOcCyu2zlsG4eTXZ1vOdYANCV8QojX_80dOIBTqCCNSlTyixdUMyWhCr3KdI23hZDYcMJPL27ICHRNTkMsDqJvHe4YDplidJkbuFvdassA5yJoO6KLFFhmuyxmZp55JkcpkBn9zhyoM5FA2yKLYuhjcJ0mD5xp1aplqSHaE7H0lyXoCju5EwCLl5M_lhYEV0ZUWKOFZt1JN72EWR_xDXhXpCdbNF"/>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+<div class="max-w-2xl">
+<span class="font-label text-primary font-bold uppercase tracking-widest text-sm mb-4 block">Engineered Elegance</span>
+<h1 class="font-headline text-6xl md:text-8xl font-bold text-on-surface leading-[0.9] tracking-tighter mb-8">
+                    The Art of <br/><span class="text-primary italic font-light">Precision</span> Weaving
+                </h1>
+<p class="text-on-surface-variant text-xl md:text-2xl max-w-lg leading-relaxed font-body">
+                    From raw fiber to refined textile, discover the meticulously calibrated journey of every Cotton Craft fabric.
+                </p>
+</div>
+</div>
+<!-- Decorative Fabric Sheet Overlay -->
+<div class="absolute bottom-20 right-6 md:right-20 fabric-sheet p-8 rounded-xl max-w-xs hidden md:block">
+<span class="material-symbols-outlined text-primary mb-2" data-icon="precision_manufacturing">precision_manufacturing</span>
+<p class="font-label text-xs uppercase font-bold text-on-surface tracking-tighter mb-2">Technical Efficiency</p>
+<p class="text-sm text-on-surface-variant leading-snug">Our looms operate at 98% efficiency with laser-guided tension control systems.</p>
+</div>
+</section>
+<!-- Manufacturing Journey Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-20 text-center md:text-left">
+<h2 class="font-headline text-4xl font-bold tracking-tight mb-4">Our Manufacturing Journey</h2>
+<div class="w-24 h-1 bg-primary mb-6"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+<!-- Step 1: Conceptualization -->
+<div class="group">
+<div class="relative mb-8 overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm h-64">
+<img alt="Conceptualization" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="close up of a textile designer sketches and fabric swatches on a clean wooden desk with soft natural daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg5AT_5blCTIOVOCoK__bdnXcZ2eHeRZJ0oz8Kwmm4ZdC1A58x9kXhFqq3TmOezA_dprOno4jyfRioj5Heli3JRVRtsthCo1yCjItAZX0fUwjeYc8iPXHinm8dIzc06tFICoPug3w0lnRix5SQnorn-T5Ug8hkAEF5tWy-RpAO-E6ABReb4j12rIX-7aMA95dRhGD9Aga9ajaYGAiTC0z-iG_bhq1CKhHfd0ykUTNbACqr9L0dJQod3nkTXSni8ryWr-auV2vw"/>
+<div class="absolute top-4 left-4 bg-primary text-on-primary w-10 h-10 flex items-center justify-center font-headline font-bold rounded-lg">01</div>
+</div>
+<h3 class="font-headline text-xl font-bold mb-3 uppercase tracking-tight">Conceptualization</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm">Translating client visions into technical weave specifications through advanced CAD modeling and trend analysis.</p>
+</div>
+<!-- Step 2: Sourcing -->
+<div class="group md:mt-12 lg:mt-0">
+<div class="relative mb-8 overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm h-64">
+<img alt="Sourcing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="stacked rolls of high quality raw cotton yarn and fiber in various shades of off-white and cream" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsnisG9NG4UhAjiOcFsXnDdmpy0BrOz0HxjUBkDIzD8EEfXmqLY2usSmXfdw8LKfvAob9Nr4WBE2BbrGC3GCmFJvUANxb79GNoUyX0_LafSpa2obUybeTuJ8gFWRONiUpMedISubdbhkXfvUGXnoJoUlSFX-iQgmI_0_uv8xyM1_cW4x6mM5E8ZvQpEuu1P3nnvKzPC2j4AD9F8PK4r7USMHZ9ceg16kX8XbhTxsdF05IBwajLhvre6KTuapNaUqndoiyrI1cx"/>
+<div class="absolute top-4 left-4 bg-primary text-on-primary w-10 h-10 flex items-center justify-center font-headline font-bold rounded-lg">02</div>
+</div>
+<h3 class="font-headline text-xl font-bold mb-3 uppercase tracking-tight">Ethical Sourcing</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm">Procuring premium long-staple cotton and recycled blends from certified sustainable plantations across Australia and Canada.</p>
+</div>
+<!-- Step 3: Weaving -->
+<div class="group">
+<div class="relative mb-8 overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm h-64">
+<img alt="Weaving" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="detail shot of thousands of blue threads feeding into a high speed industrial loom in a motion blur effect" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLAFNAUtdAqKOEDTCf_Vw1tT81dGlZx5-m7XSzMbbTH7WTb7Z00FbvDWpRm2RTmXLzPRlc0MmwpUI7rgzbIenKiinGvGlqwLMIVmCBE1Gbmchmv1ZNh-UzhY-rrLFHMq3Cct7elL9jt_4RkbiTa8qVzVrebEGzPGrTbujL1epKo7RRJuKI-K5_xeNUfMs0LVas6RB0sPSQVxe557yPwqV1hx07bDK_zehOB9GamS3z-zAiRHuq-vm_PkKUkGb1OU2JtrlJ-74q"/>
+<div class="absolute top-4 left-4 bg-primary text-on-primary w-10 h-10 flex items-center justify-center font-headline font-bold rounded-lg">03</div>
+</div>
+<h3 class="font-headline text-xl font-bold mb-3 uppercase tracking-tight">High-Speed Weaving</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm">Utilizing state-of-the-art air-jet and rapier looms to achieve unmatched structural integrity and intricate patterns.</p>
+</div>
+<!-- Step 4: Quality Control -->
+<div class="group md:mt-12 lg:mt-0">
+<div class="relative mb-8 overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm h-64">
+<img alt="Quality Control" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="quality inspector checking finished fabric under a bright magnifying light lamp in a laboratory setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAw2fhvpuQnLhBvNW11p09WJ3IvXLQFO6GvWtLWfaphJnMLsRidwzr7epNVaGAct1gIbweziU0WuP0Kh5GpAXmN_oJq0qJrBj3cwGvR1mduJ1vk0JjHfnfuaDyXdgNO3gZWqZ5vYU0Vx7kEwMjy4iPLsKkzwzJ4lhYssiQlS3PGBGFEIwbfPcT3n28JSI8931V1RW7fOcBauP7NgAGNC0BnUEpXDVt55iG7RlvcX45MQEQXloDj-9Z6k8Z05-ycqEeKczEr7Cib"/>
+<div class="absolute top-4 left-4 bg-primary text-on-primary w-10 h-10 flex items-center justify-center font-headline font-bold rounded-lg">04</div>
+</div>
+<h3 class="font-headline text-xl font-bold mb-3 uppercase tracking-tight">Quality Assurance</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm">Multi-stage inspection protocols ensuring zero-defect output and consistent color fastness for every single meter.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Vertical Integration Bento Section -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Bento Main -->
+<div class="lg:col-span-7 bg-surface-container-highest rounded-xl p-12 flex flex-col justify-center relative overflow-hidden">
+<div class="relative z-10">
+<span class="font-label text-primary font-bold uppercase tracking-widest text-xs mb-4 block">The Facility Advantage</span>
+<h2 class="font-headline text-5xl font-bold mb-6 tracking-tight leading-tight">Vertically Integrated <br/>For Perfection.</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8 max-w-md">
+                            By housing spinning, weaving, dyeing, and finishing under one roof, we eliminate supply chain latency and maintain absolute control over every technical variable.
+                        </p>
+<div class="grid grid-cols-2 gap-6">
+<div>
+<p class="font-headline text-3xl font-bold text-primary">100%</p>
+<p class="font-label text-xs uppercase font-semibold text-on-surface">In-House Production</p>
+</div>
+<div>
+<p class="font-headline text-3xl font-bold text-primary">0km</p>
+<p class="font-label text-xs uppercase font-semibold text-on-surface">Inter-Process Transport</p>
+</div>
+</div>
+</div>
+<!-- Decorative Background Element -->
+<div class="absolute -right-20 -bottom-20 opacity-10">
+<span class="material-symbols-outlined text-[300px]" data-icon="factory">factory</span>
+</div>
+</div>
+<!-- Bento Side Column -->
+<div class="lg:col-span-5 grid grid-rows-2 gap-8">
+<!-- Top Card -->
+<div class="bg-primary text-on-primary rounded-xl p-8 textile-gradient flex flex-col justify-between">
+<span class="material-symbols-outlined text-4xl mb-4" data-icon="energy_savings_leaf">energy_savings_leaf</span>
+<div>
+<h4 class="font-headline text-xl font-bold mb-2">Solar-Powered Mill</h4>
+<p class="text-primary-fixed leading-snug text-sm opacity-90">Our integrated facility runs on 60% renewable energy, reducing the carbon footprint of every textile produced.</p>
+</div>
+</div>
+<!-- Bottom Card -->
+<div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/15 flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="speed">speed</span>
+<span class="font-label text-xs font-bold text-on-surface-variant bg-surface-container px-2 py-1 rounded">FAST TRACK</span>
+</div>
+<div>
+<h4 class="font-headline text-xl font-bold mb-2">Rapid Prototyping</h4>
+<p class="text-on-surface-variant leading-snug text-sm">Go from digital concept to physical swatch in under 48 hours thanks to our streamlined facility layout.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer id="global-footer"></footer>
+<script src="site-structure.js"></script>
+</body></html>
+
+
