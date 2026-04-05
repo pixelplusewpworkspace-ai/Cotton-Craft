@@ -1,3 +1,41 @@
+// ========== PRELOADER ==========
+(function() {
+    const preloaderHTML = `
+    <div id="cc-preloader" style="position:fixed;inset:0;z-index:99999;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#006096;transition:opacity 0.6s ease,visibility 0.6s ease;">
+        <style>
+            @keyframes cc-spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+            @keyframes cc-pulse { 0%,100% { opacity:0.4; } 50% { opacity:1; } }
+            @keyframes cc-line-grow { 0% { width:0; } 50% { width:80px; } 100% { width:0; } }
+            @keyframes cc-fade-up { 0% { opacity:0; transform:translateY(10px); } 100% { opacity:1; transform:translateY(0); } }
+            .cc-ring { width:56px;height:56px;border:3px solid rgba(255,255,255,0.15);border-top-color:#96ccff;border-radius:50%;animation:cc-spin 1s cubic-bezier(0.5,0,0.5,1) infinite; }
+            .cc-ring-outer { width:72px;height:72px;border:2px solid rgba(255,255,255,0.08);border-bottom-color:rgba(150,204,255,0.5);border-radius:50%;animation:cc-spin 1.8s cubic-bezier(0.5,0,0.5,1) infinite reverse;position:absolute; }
+            .cc-brand { color:white;font-family:'Red Hat Display',sans-serif;font-size:13px;font-weight:800;letter-spacing:0.35em;text-transform:uppercase;margin-top:32px;animation:cc-fade-up 0.8s ease 0.2s both; }
+            .cc-line { height:1px;background:rgba(255,255,255,0.3);margin-top:16px;animation:cc-line-grow 1.8s ease-in-out infinite; }
+            .cc-sub { color:rgba(150,204,255,0.7);font-family:'Lexend Deca',sans-serif;font-size:9px;letter-spacing:0.25em;text-transform:uppercase;margin-top:12px;animation:cc-pulse 2s ease infinite; }
+        </style>
+        <div style="position:relative;display:flex;align-items:center;justify-content:center;">
+            <div class="cc-ring-outer"></div>
+            <div class="cc-ring"></div>
+        </div>
+        <div class="cc-brand">Cotton Craft</div>
+        <div class="cc-line"></div>
+        <div class="cc-sub">Loading Experience</div>
+    </div>`;
+    document.write(preloaderHTML);
+})();
+
+window.addEventListener('load', () => {
+    const preloader = document.getElementById('cc-preloader');
+    if (preloader) {
+        // Forced delay to show the animation (2 seconds)
+        setTimeout(() => {
+            preloader.style.opacity = '0';
+            preloader.style.visibility = 'hidden';
+            setTimeout(() => preloader.remove(), 700);
+        }, 2000);
+    }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     // Inject Header
     const headerEl = document.getElementById('global-header');
