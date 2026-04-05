@@ -297,4 +297,87 @@ document.addEventListener('DOMContentLoaded', () => {
 </footer>
         `;
     }
+
+    // ========== SCROLL ANIMATIONS ==========
+    // Inject animation CSS
+    const animStyle = document.createElement('style');
+    animStyle.textContent = `
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .scroll-reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .scroll-reveal-left {
+            opacity: 0;
+            transform: translateX(-40px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .scroll-reveal-left.revealed {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .scroll-reveal-right {
+            opacity: 0;
+            transform: translateX(40px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .scroll-reveal-right.revealed {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .scroll-reveal-scale {
+            opacity: 0;
+            transform: scale(0.92);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .scroll-reveal-scale.revealed {
+            opacity: 1;
+            transform: scale(1);
+        }
+    `;
+    document.head.appendChild(animStyle);
+
+    // Target elements for animation
+    const selectors = [
+        { sel: 'section', cls: 'scroll-reveal', delay: 0 },
+        { sel: 'section h2', cls: 'scroll-reveal', delay: 100 },
+        { sel: 'section h3', cls: 'scroll-reveal', delay: 150 },
+        { sel: 'section p', cls: 'scroll-reveal', delay: 200 },
+        { sel: 'section img:not(nav img)', cls: 'scroll-reveal-scale', delay: 100 },
+        { sel: 'section .grid > div', cls: 'scroll-reveal', delay: 0 },
+        { sel: 'section ul li', cls: 'scroll-reveal', delay: 0 },
+        { sel: 'section a.inline-flex', cls: 'scroll-reveal', delay: 250 },
+        { sel: 'section button', cls: 'scroll-reveal', delay: 200 },
+        { sel: 'footer .grid > div', cls: 'scroll-reveal', delay: 0 },
+    ];
+
+    selectors.forEach(({ sel, cls }) => {
+        document.querySelectorAll(sel).forEach((el, i) => {
+            if (!el.closest('nav') && !el.closest('#main-nav') && !el.classList.contains('scroll-reveal') && !el.classList.contains('scroll-reveal-left') && !el.classList.contains('scroll-reveal-right') && !el.classList.contains('scroll-reveal-scale')) {
+                el.classList.add(cls);
+                el.style.transitionDelay = `${Math.min(i % 6, 4) * 80}ms`;
+            }
+        });
+    });
+
+    // Intersection Observer
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.08,
+        rootMargin: '0px 0px -40px 0px'
+    });
+
+    document.querySelectorAll('.scroll-reveal, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-scale').forEach(el => {
+        observer.observe(el);
+    });
 });
