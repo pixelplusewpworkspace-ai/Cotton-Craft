@@ -92,9 +92,9 @@ document.addEventListener('DOMContentLoaded', () => {
             
             <!-- Industries Dropdown -->
             <div class="relative group">
-                <button class="px-3 py-2 rounded-full text-[10px] font-bold uppercase tracking-[0.15em] text-slate-700 hover:text-primary transition-all duration-200 flex items-center gap-1">
+                <a href="industries.html" class="px-3 py-2 rounded-full text-[10px] font-bold uppercase tracking-[0.15em] text-slate-700 hover:text-primary transition-all duration-200 flex items-center gap-1 cursor-pointer">
                     Industries <span class="material-symbols-outlined text-[14px]">expand_more</span>
-                </button>
+                </a>
                 <div class="absolute top-full left-0 w-64 pt-2 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-out z-[110]">
                     <div class="bg-white/95 backdrop-blur-xl border border-slate-100 shadow-2xl rounded-2xl p-3 overflow-hidden">
                         <a href="sporting-goods.html" class="flex items-center p-3 rounded-xl hover:bg-slate-50 transition-colors group/item">
@@ -119,9 +119,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             <!-- Process Dropdown -->
             <div class="relative group">
-                <button class="px-3 py-2 rounded-full text-[10px] font-bold uppercase tracking-[0.15em] text-slate-700 hover:text-primary transition-all duration-200 flex items-center gap-1">
+                <a href="process.html" class="px-3 py-2 rounded-full text-[10px] font-bold uppercase tracking-[0.15em] text-slate-700 hover:text-primary transition-all duration-200 flex items-center gap-1 cursor-pointer">
                     Process <span class="material-symbols-outlined text-[14px]">expand_more</span>
-                </button>
+                </a>
                 <div class="absolute top-full left-0 w-64 pt-2 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-out z-[110]">
                     <div class="bg-white/95 backdrop-blur-xl border border-slate-100 shadow-2xl rounded-2xl p-3 overflow-hidden">
                         <a href="our-process.html" class="flex items-center p-3 rounded-xl hover:bg-slate-50 transition-colors">
@@ -148,9 +148,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             <!-- About Dropdown -->
             <div class="relative group">
-                <button class="px-3 py-2 rounded-full text-[10px] font-bold uppercase tracking-[0.15em] text-slate-700 hover:text-primary transition-all duration-200 flex items-center gap-1">
+                <a href="about.html" class="px-3 py-2 rounded-full text-[10px] font-bold uppercase tracking-[0.15em] text-slate-700 hover:text-primary transition-all duration-200 flex items-center gap-1 cursor-pointer">
                     About <span class="material-symbols-outlined text-[14px]">expand_more</span>
-                </button>
+                </a>
                 <div class="absolute top-full left-0 w-64 pt-2 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-out z-[110]">
                     <div class="bg-white/95 backdrop-blur-xl border border-slate-100 shadow-2xl rounded-2xl p-3 overflow-hidden">
                         <a href="story.html" class="flex items-center p-3 rounded-xl hover:bg-slate-50 transition-colors">
@@ -168,10 +168,13 @@ document.addEventListener('DOMContentLoaded', () => {
                         <a href="faq.html" class="flex items-center p-3 rounded-xl hover:bg-slate-50 transition-colors">
                             <span class="text-[11px] font-bold uppercase tracking-wider text-slate-700">FAQ</span>
                         </a>
+                        <a href="careers.html" class="flex items-center p-3 rounded-xl hover:bg-blue-50/50 transition-colors group/career">
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-primary group-hover/career:text-primary">Careers</span>
+                            <span class="ml-auto px-2 py-0.5 bg-primary/10 text-primary rounded-[4px] text-[7px] font-black uppercase tracking-widest">Hiring</span>
+                        </a>
                     </div>
                 </div>
             </div>
-
             <a href="contact.html" class="px-3 py-2 rounded-full text-[10px] font-bold uppercase tracking-[0.15em] text-slate-700 hover:text-primary transition-all duration-200">Contact Us</a>
         </div>
 
@@ -227,6 +230,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <a href="sewing-contractors.html" class="p-2 text-[10px] text-slate-600 uppercase font-medium">Industrial Sewing Contractors</a>
                     <a href="events-news.html" class="p-2 text-[10px] text-slate-600 uppercase font-medium">Events</a>
                     <a href="faq.html" class="p-2 text-[10px] text-slate-600 uppercase font-medium">FAQ</a>
+                    <a href="careers.html" class="p-2 text-[10px] text-primary uppercase font-bold flex items-center justify-between">Careers <span class="px-2 py-0.5 bg-primary/10 rounded text-[7px] font-black">HIRING</span></a>
                 </div>
             </div>
 
@@ -312,6 +316,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <ul class="space-y-4">
                 <li><a href="about.html" class="text-slate-400 hover:text-white hover:pl-2 transition-all duration-300 font-label text-sm flex items-center gap-2 italic">Our Story</a></li>
                 <li><a href="process.html" class="text-slate-400 hover:text-white hover:pl-2 transition-all duration-300 font-label text-sm flex items-center gap-2 italic">Manufacturing Process</a></li>
+                <li><a href="careers.html" class="text-slate-400 hover:text-white hover:pl-2 transition-all duration-300 font-label text-sm flex items-center gap-2 italic">Careers</a></li>
                 <li><a href="quality-assurance.html" class="text-slate-400 hover:text-white hover:pl-2 transition-all duration-300 font-label text-sm flex items-center gap-2 italic">Quality Assurance</a></li>
                 <li><a href="contact.html" class="text-slate-400 hover:text-white hover:pl-2 transition-all duration-300 font-label text-sm flex items-center gap-2 italic">Contact Us</a></li>
             </ul>

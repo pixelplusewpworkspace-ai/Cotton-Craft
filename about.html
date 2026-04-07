@@ -1,84 +1,39 @@
 <!DOCTYPE html>
-
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>About Cotton Craft | The Industrial Atelier</title>
-<!-- Material Symbols -->
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200..900&family=Red+Hat+Display:wght@700;800;900&display=swap" rel="stylesheet"/>
+<html lang="en" class="light">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>About Cotton Craft | The Industrial Atelier</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200..900&family=Red+Hat+Display:wght@700;800;900&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "on-surface": "#181b25",
-                    "surface-tint": "#00639a",
-                    "tertiary-container": "#dd2f32",
-                    "secondary-fixed": "#dbe1ff",
-                    "tertiary": "#b90d1d",
-                    "surface-bright": "#faf8ff",
-                    "surface": "#faf8ff",
-                    "secondary": "#3a59b2",
-                    "on-tertiary": "#ffffff",
-                    "surface-variant": "#e0e1f0",
-                    "surface-dim": "#d8d9e7",
-                    "inverse-surface": "#2d303b",
-                    "secondary-fixed-dim": "#b4c5ff",
-                    "secondary-container": "#85a2ff",
-                    "primary-fixed-dim": "#96ccff",
-                    "on-primary": "#ffffff",
-                    "on-tertiary-fixed-variant": "#930012",
-                    "on-tertiary-container": "#fffbff",
-                    "primary": "#006096",
-                    "on-error": "#ffffff",
-                    "on-surface-variant": "#404750",
-                    "outline": "#707881",
-                    "background": "#faf8ff",
-                    "error-container": "#ffdad6",
-                    "on-secondary-fixed-variant": "#1d4098",
-                    "primary-fixed": "#cee5ff",
-                    "on-primary-fixed": "#001d32",
-                    "surface-container-lowest": "#ffffff",
-                    "on-secondary": "#ffffff",
-                    "inverse-on-surface": "#eff0fe",
-                    "inverse-primary": "#96ccff",
-                    "on-primary-container": "#fdfcff",
-                    "surface-container-high": "#e6e7f6",
-                    "on-error-container": "#93000a",
-                    "on-secondary-fixed": "#00174c",
-                    "surface-container-low": "#f2f3ff",
-                    "outline-variant": "#c0c7d2",
-                    "surface-container": "#ecedfb",
-                    "tertiary-fixed": "#ffdad6",
-                    "primary-container": "#0c7abb",
-                    "surface-container-highest": "#e0e1f0",
-                    "on-tertiary-fixed": "#410003",
-                    "on-background": "#181b25",
-                    "on-primary-fixed-variant": "#004a75",
-                    "tertiary-fixed-dim": "#ffb3ad",
-                    "on-secondary-container": "#09348d",
-                    "error": "#ba1a1a"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "fontFamily": {
-                    "headline": ["Red Hat Display"],
-                    "body": ["Lexend Deca"],
-                    "label": ["Lexend Deca"]
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#006096",
+                        "on-surface": "#181b25",
+                        "on-surface-variant": "#404750",
+                        "surface-container-low": "#f2f3ff",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#c0c7d2",
+                        "background": "#faf8ff"
+                    },
+                    fontFamily: {
+                        headline: ["Red Hat Display"],
+                        body: ["Lexend Deca"],
+                        label: ["Lexend Deca"]
+                    }
+                }
             }
-          },
-        },
-      }
+        }
     </script>
-<style>
+    
+    <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
@@ -92,205 +47,230 @@
         .ghost-border {
             outline: 1px solid rgba(192, 199, 210, 0.15);
         }
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .logo-slider-track { 
+            display: flex; 
+            width: max-content; 
+            animation: scroll 60s linear infinite; 
+            gap: 8rem; /* Equivalent to gap-32 */
+        }
+        .logo-slider-track:hover { animation-play-state: paused; }
     </style>
+    
+    <script src='site-structure.js'></script>
 </head>
-<body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
-<!-- TopNavBar -->
-<header id="global-header"></header>
-<main>
-<!-- Hero Section: Our Story -->
-<section class="relative pt-24 pb-32 overflow-hidden">
-<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-<div class="lg:col-span-7 space-y-8">
-<span class="font-label uppercase text-xs font-semibold tracking-widest text-primary">Est. 1984 — Global Legacy</span>
-<h1 class="font-headline text-5xl lg:text-7xl font-extrabold tracking-tight text-on-surface leading-none">
+<body class="bg-background text-on-surface font-body selection:bg-primary/20 antialiased">
+    <!-- TopNavBar -->
+    <header id="global-header"></header>
+
+    <main>
+        <!-- Hero Section: Our Story -->
+        <section class="relative pt-24 pb-32 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-8">
+                    <span class="font-label uppercase text-xs font-semibold tracking-widest text-primary">Est. 1984 — Global Legacy</span>
+                    <h1 class="font-headline text-5xl lg:text-7xl font-extrabold tracking-tight text-on-surface leading-none">
                         Crafting Fabrics, <br/>
-<span class="text-primary italic">Shaping Styles.</span>
-</h1>
-<p class="font-body text-xl text-on-surface-variant leading-relaxed mb-6">
-                    Rooted in the industrial strength of multi-generational manufacturing expertise, we bridge the gap between traditional craft and modern engineering.
-                </p>
-<button class="text-primary font-label uppercase text-xs font-bold tracking-[0.15em] hover:underline" onclick="location.href='story.html'">The Full Story →</button>
-<div class="flex items-center space-x-8 pt-4">
-<div class="flex flex-col">
-<span class="font-headline text-3xl font-bold text-primary">2</span>
-<span class="font-label text-xs uppercase tracking-tighter">Global Headquarters</span>
-</div>
-<div class="flex flex-col">
-<span class="font-headline text-3xl font-bold text-primary">40+</span>
-<span class="font-label text-xs uppercase tracking-tighter">Years Excellence</span>
-</div>
-<div class="flex flex-col">
-<span class="font-headline text-3xl font-bold text-primary">500+</span>
-<span class="font-label text-xs uppercase tracking-tighter">Specialized Artisans</span>
-</div>
-</div>
-</div>
-<div class="lg:col-span-5 relative">
-<div class="rounded-xl overflow-hidden shadow-2xl transform lg:rotate-3 hover:rotate-0 transition-transform duration-700">
-<img class="w-full h-[500px] object-cover" data-alt="close-up detail of a vintage industrial sewing machine in a sunlit factory workshop with rolls of blue fabric" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrojWg8ESmmV9MlYupeKmkrgDSovqIYqJ4eLzxPwVeNZ58Bb1INhfYAIybNhxoOofgjknvNaQVEMLZFYHM1mlnQhK_sNofLKEKIggIDbyssLduofCq3vXCWouUpVGNI2uGINJRe8XGkv_AX9jC2-d4HH5aRxdUfBI8z_LwrQgA2m5QePgoUoDnMAL0mK2fL_OM5LPsl3h3n5oniY7YeILzrvqf3VAX0IOKVB-QW_hANRCHeUS0tJQDn_B8ICMb9kER-qnuTqgZ"/>
-</div>
-<!-- Fabric Sheet Overlay -->
-<div class="fabric-sheet absolute -bottom-10 -left-10 p-8 rounded-lg max-w-xs hidden lg:block shadow-xl">
-<p class="font-body italic text-on-surface text-lg">"The precision of a blueprint, the elegance of a fashion lookbook."</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Proud Partners: Bento Grid -->
-<section class="bg-surface-container-low py-24">
-<div class="max-w-7xl mx-auto px-6">
-<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 space-y-4">
-<div>
-<span class="font-label uppercase text-xs font-semibold tracking-widest text-primary">Trusted By The Best</span>
-<h2 class="font-headline text-4xl font-bold mt-2">Proud Partners</h2>
-</div>
-<div class="md:col-span-1 bg-surface-container-low p-10 rounded-xl">
-<h3 class="font-headline text-2xl font-bold mb-4 text-ink">Innovation</h3>
-<p class="font-body text-on-surface-variant leading-relaxed mb-6">Continuous investment in automated sewing tech and advanced R&amp;D for specialized fabrics.</p>
-<button class="bg-primary/5 text-primary px-6 py-2 rounded-lg font-label uppercase text-xs font-bold tracking-widest hover:bg-primary/10 transition-all" onclick="location.href='events-news.html'">News &amp; Events</button>
-</div>
-<p class="font-body text-on-surface-variant max-w-md">Collaborating with high-profile global clients to deliver unmatched textile quality across continents.</p>
-</div>
-<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-0.5 bg-outline-variant/20 rounded-xl overflow-hidden">
-<!-- Placeholder Partner Logos with Hover Effect -->
-<div class="bg-surface-container-lowest p-12 flex items-center justify-center grayscale hover:grayscale-0 transition-all">
-<img class="h-12 w-auto object-contain" data-alt="minimalist corporate logo for a high-end luxury fashion brand in black and white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-a8cmv5YjuHj7nc5vjkW06WB5tUJkFtIhysVlXV20HjEz5lmYShSLHGnVxzMj6ri9lbFvPC6PUR3c4vB29k59lZ1rie6UgjoqzTFxA7zTt-Yddn-Jx8CrMLJgJTiQ34tMKtJdpm5kWJVJ1LuD3DhK63UwT2p44f4f4a-zUJcaLUcDcuanl7ef-KjCalcJ4uKzBpChDtjch0lPd0QlImLejyQl1lrBC5d_yJTDDPzhI62q5d8BWnz46qDIskwEt9DZbrkF0quu"/>
-</div>
-<div class="bg-surface-container-lowest p-12 flex items-center justify-center grayscale hover:grayscale-0 transition-all">
-<img class="h-12 w-auto object-contain" data-alt="sleek modern minimalist logo for an international logistics company" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8wxlII__E7Ab_bIm7c3DoZkRiKrWr9uHELULB5MTZ9IB7F-ZUmbZOG1xCqCCiEsAu_Lx5WsSYc27dbdrJbK5RoHmArupAqqqKAKjadGtSb7guH4VFOC-ZzlfIv9TASu5i1n-Sy59bVXDrBh7qjYLDTiSEMz99nW8YkGDJ3MJIZD12jZk43E5AQYSyYACSuUtTtofv-BV7b7N2G8cVCvWfJWrWS_hOj1JSRMutrRK2BnyIHp-pEpA3Rmlkd-1OdDbGyd1H2piH"/>
-</div>
-<div class="bg-surface-container-lowest p-12 flex items-center justify-center grayscale hover:grayscale-0 transition-all">
-<img class="h-12 w-auto object-contain" data-alt="elegant typography based logo for a premium interior design firm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCScd_gwzlI_QmqKosuMa_sKv3UP4_PzAYhu56P3X1mfXjL2tcrY_fvXDQuH2k856ExlFtDN5Z4JkSPXQ-We369lS1V8j9yVDcYQznDaz40IBAGmzSNVSUZt_ekHioH8K2VTmBHWeN5G0FDhkjNmrsnyynmvLrhPtZSN3FM_iZNhBov2da2rb-_S7N7ygc2kfot_O-PVvfW3_PZJZZCVwgk5TSh9H59_0lk7aaCnDZ-SeLxeHH7kNMvs22GONMubO6N4sMpQlVy"/>
-</div>
-<div class="bg-surface-container-lowest p-12 flex items-center justify-center grayscale hover:grayscale-0 transition-all">
-<img class="h-12 w-auto object-contain" data-alt="bold industrial logo for a large scale manufacturing conglomerate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlnlxTcKOyDeKdYdt8sleIC5HCXBrSsL_TOAMgBHWdBaPiJ0XJ2H9KF3HBntqE7WV_4LjA9Ht7BDsU3yhJ2Rdh007dGMwUXeRKi06eQdllL8jQsByrcXoRr4Q0e-eEdUm_pC7BthLRbSzKP1LVGcb7JC5i5Nmj4d53WItJWqtoMu4DKPL4Re7TSa-loTmbO7re0pWEgih99TcBlaTL8OocOlPOv-kvOg29gxLhVbkoe2XZAE2X7jzpzf6klL-nXHcBuIq3WhR1"/>
-</div>
-<div class="bg-surface-container-lowest p-12 flex items-center justify-center grayscale hover:grayscale-0 transition-all">
-<img class="h-12 w-auto object-contain" data-alt="clean geometric logo for a global shipping and maritime company" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr0Jhka6zaWMYGlT5ArvmMpLMi4zEYpJs28HU8d_RJvE_jOAfpg7jZKOisj7ENCh5UaD46rNf7VGoQudD8obMX7ZZPnl4ChbpK9LKumkHOUjD2gROwvZpsgLg4eayKMWZygLLrpTRvXDdK1PKGR6fWSu8ywCD1TkqiaKdZXsZihbFfElzmltYwfkdo06quPrnWQY2CDuvBPW7feO3iajbXn0XJMFggyvj_ALPT_2r3JXsIHmwyXzWVplZbTevd3cKksPZlI-x2"/>
-</div>
-<div class="bg-surface-container-lowest p-12 flex items-center justify-center grayscale hover:grayscale-0 transition-all">
-<img class="h-12 w-auto object-contain" data-alt="minimalist aesthetic logo for a boutique apparel manufacturer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVQqH2iYCCuu9CxXiRNoWS3Aiv7TNJSfC0TX8kgZi5uTrOlYL_YahdZekrL_0MMaiLAHnhlaeqvCpwvWNsRGmoHGRz7rkQQvqk1svBmT0Z24bSunzlCUSuhyFFpw2G4XWm2TkENCY6FDg0Py6yqrrsKJmDX3Zo_tV4_mwzm4aGPTpUAiqMmtxC5o_Z_jjrZJ1JjN7w-zgE6v7JWEsc8Sl3ASfYyRk47m80WHm46roc_gt6XF-gRKvPrt-7zvhxyVUVGYO198Xh"/>
-</div>
-</div>
-</div>
-</section>
-<!-- Industrial Sewing Contractors: Team & Expertise -->
-<section class="py-24 overflow-hidden">
-<div class="max-w-7xl mx-auto px-6">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-<div class="order-2 lg:order-1 relative">
-<div class="grid grid-cols-2 gap-4">
-<img class="rounded-lg shadow-lg w-full h-64 object-cover" data-alt="skillful hands of an artisan sewing a heavy duty blue denim fabric with industrial precision" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB22-yJPAZEzdxjTykU0b1H-uLOAflTF912Tb_0x-c_3ZfnvzGGMiGi7RQfPSlrq2Lsu-HNkmFGuZqNd-CXCcFPrCbA-6dw1lIUq0h6hck0vcAEtoV9TFDE1uvjGa4p0FwM6rWvG-I1Ym_zTeHnsRNEqBy_DIt0YzQQd_xmPtxR8WxsbpGWAcCE-KEpaL0bYbFJW8HmEgmSk1RRa9U1lJzQA7tgx5bb3A4wyRmrK4oISsfTd48Scr4Ltr0iWbrdJ7uRumYb9nyr"/>
-<img class="rounded-lg shadow-lg w-full h-64 object-cover mt-12" data-alt="wide shot of a clean modern textile factory floor with organized sewing stations and bright lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASkwHcvVbSXv4N8zz1yzl5UyaO3uzwdlzBHdhiMcsmJ601hkejjnC2waplNICxxPuBKwayi047lurEmcdHHi7s71nn2DxkU-EauwLv5u8aMEOWQNoCxbo8oqU4nC3Ic_qZFr2cVFRGmq5wtkJqGcmoS_BMr60EOnpuCDD9SqDQV2w6IbCGCenNMXpwGS75XM2I2YZ4s4MKTm8ynliVCW9PrXua7Sb22XjFOZIrB5pPOcKufBQlA7jlVgma9ZcnW9WkZEHjfg3H"/>
-</div>
-<div class="absolute -z-10 -top-10 -left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
-</div>
-<div class="order-1 lg:order-2 space-y-8">
-<span class="font-label uppercase text-xs font-semibold tracking-widest text-primary">Specialized Expertise</span>
-<h2 class="font-headline text-4xl font-bold">Industrial Sewing Contractors</h2>
-<p class="font-body text-lg text-on-surface-variant leading-relaxed">
+                        <span class="text-primary italic">Shaping Styles.</span>
+                    </h1>
+                    <p class="font-body text-xl text-on-surface-variant leading-relaxed mb-6">
+                        Rooted in the industrial strength of multi-generational manufacturing expertise, we bridge the gap between traditional craft and modern engineering.
+                    </p>
+                    <button class="text-primary font-label uppercase text-xs font-bold tracking-[0.15em] hover:underline" onclick="location.href='story.html'">The Full Story →</button>
+                    <div class="flex items-center space-x-8 pt-4">
+                        <div class="flex flex-col">
+                            <span class="font-headline text-3xl font-bold text-primary">2</span>
+                            <span class="font-label text-xs uppercase tracking-tighter">Global Headquarters</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="font-headline text-3xl font-bold text-primary">40+</span>
+                            <span class="font-label text-xs uppercase tracking-tighter">Years Excellence</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="font-headline text-3xl font-bold text-primary">500+</span>
+                            <span class="font-label text-xs uppercase tracking-tighter">Specialized Artisans</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 relative">
+                    <div class="rounded-xl overflow-hidden shadow-2xl transform lg:rotate-3 hover:rotate-0 transition-transform duration-700">
+                        <img class="w-full h-[500px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrojWg8ESmmV9MlYupeKmkrgDSovqIYqJ4eLzxPwVeNZ58Bb1INhfYAIybNhxoOofgjknvNaQVEMLZFYHM1mlnQhK_sNofLKEKIggIDbyssLduofCq3vXCWouUpVGNI2uGINJRe8XGkv_AX9jC2-d4HH5aRxdUfBI8z_LwrQgA2m5QePgoUoDnMAL0mK2fL_OM5LPsl3h3n5oniY7YeILzrvqf3VAX0IOKVB-QW_hANRCHeUS0tJQDn_B8ICMb9kER-qnuTqgZ" alt="Industrial Sewing Machine"/>
+                    </div>
+                    <div class="fabric-sheet absolute -bottom-10 -left-10 p-8 rounded-lg max-w-xs hidden lg:block shadow-xl">
+                        <p class="font-body italic text-on-surface text-lg">"The precision of a blueprint, the elegance of a fashion lookbook."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proud Partners: Infinite Slider -->
+        <section class="bg-surface-container-low py-24">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 space-y-4">
+                    <div>
+                        <span class="font-label uppercase text-xs font-semibold tracking-widest text-primary">Trusted By The Best</span>
+                        <h2 class="font-headline text-4xl font-bold mt-2">Proud Partners</h2>
+                    </div>
+                    <p class="font-body text-on-surface-variant max-w-md">Collaborating with high-profile global clients to deliver unmatched textile quality across continents.</p>
+                </div>
+                
+                <div class="relative flex items-center overflow-hidden py-12">
+                    <!-- Left Fade Overlay -->
+                    <div class="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-surface-container-low to-transparent z-10 pointer-events-none"></div>
+                    <!-- Right Fade Overlay -->
+                    <div class="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-surface-container-low to-transparent z-10 pointer-events-none"></div>
+
+                    <div class="logo-slider-track flex items-center grayscale hover:grayscale-0 transition-all duration-700">
+                        <!-- Set 1 -->
+                        <img src="clothing%20barands/623b2ac255f99_pol_rl-jpg__623b2ac255f99_POL_RL.webp" alt="Partner" class="h-10 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform duration-500 cursor-pointer">
+                        <img src="clothing%20barands/Calvin-Klein-Logo-PNG-Images-HD.png" alt="Partner" class="h-10 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform duration-500 cursor-pointer">
+                        <img src="clothing%20barands/Chanel_logo_interlocking_cs.svg.png" alt="Partner" class="h-10 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform duration-500 cursor-pointer">
+                        <img src="clothing%20barands/Levis-logo-quer.svg.png" alt="Partner" class="h-10 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform duration-500 cursor-pointer">
+                        <img src="clothing%20barands/Logo_NIKE.svg" alt="Partner" class="h-10 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform duration-500 cursor-pointer">
+                        <img src="clothing%20barands/Logo_Umbro.png" alt="Partner" class="h-10 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform duration-500 cursor-pointer">
+                        <img src="clothing%20barands/Prada-Logo.png" alt="Partner" class="h-10 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform duration-500 cursor-pointer">
+                        <img src="clothing%20barands/Reebok-logo.jpg" alt="Partner" class="h-10 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform duration-500 cursor-pointer">
+                        <img src="clothing%20barands/The-North-Face-Logo.png" alt="Partner" class="h-10 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform duration-500 cursor-pointer">
+                        <img src="clothing%20barands/boss-hugo-boss-logo-black-and-white.png" alt="Partner" class="h-10 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform duration-500 cursor-pointer">
+                        <img src="clothing%20barands/db009b671e8666edba087eb1a9f6c3f3f66c95e3-1600x900.webp" alt="Partner" class="h-10 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform duration-500 cursor-pointer">
+                        <img src="clothing%20barands/https___prod-bof-media.s3.eu-west-1.amazonaws.com_import_filestack_z2OC32OLSkWODRkgwZnZ_c2101aa153fda068b36023e9191e4b4e.avif" alt="Partner" class="h-10 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform duration-500 cursor-pointer">
+                        <img src="clothing%20barands/images%20(2).png" alt="Partner" class="h-10 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform duration-500 cursor-pointer">
+                        
+                        <!-- Set 2 (Duplicates for seamless loop) -->
+                        <img src="clothing%20barands/623b2ac255f99_pol_rl-jpg__623b2ac255f99_POL_RL.webp" alt="Partner" class="h-10 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform duration-500 cursor-pointer">
+                        <img src="clothing%20barands/Calvin-Klein-Logo-PNG-Images-HD.png" alt="Partner" class="h-10 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform duration-500 cursor-pointer">
+                        <img src="clothing%20barands/Chanel_logo_interlocking_cs.svg.png" alt="Partner" class="h-10 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform duration-500 cursor-pointer">
+                        <img src="clothing%20barands/Levis-logo-quer.svg.png" alt="Partner" class="h-10 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform duration-500 cursor-pointer">
+                        <img src="clothing%20barands/Logo_NIKE.svg" alt="Partner" class="h-10 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform duration-500 cursor-pointer">
+                        <img src="clothing%20barands/Logo_Umbro.png" alt="Partner" class="h-10 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform duration-500 cursor-pointer">
+                        <img src="clothing%20barands/Prada-Logo.png" alt="Partner" class="h-10 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform duration-500 cursor-pointer">
+                        <img src="clothing%20barands/Reebok-logo.jpg" alt="Partner" class="h-10 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform duration-500 cursor-pointer">
+                        <img src="clothing%20barands/The-North-Face-Logo.png" alt="Partner" class="h-10 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform duration-500 cursor-pointer">
+                        <img src="clothing%20barands/boss-hugo-boss-logo-black-and-white.png" alt="Partner" class="h-10 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform duration-500 cursor-pointer">
+                        <img src="clothing%20barands/db009b671e8666edba087eb1a9f6c3f3f66c95e3-1600x900.webp" alt="Partner" class="h-10 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform duration-500 cursor-pointer">
+                        <img src="clothing%20barands/https___prod-bof-media.s3.eu-west-1.amazonaws.com_import_filestack_z2OC32OLSkWODRkgwZnZ_c2101aa153fda068b36023e9191e4b4e.avif" alt="Partner" class="h-10 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform duration-500 cursor-pointer">
+                        <img src="clothing%20barands/images%20(2).png" alt="Partner" class="h-10 w-auto object-contain flex-shrink-0 hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industrial Sewing Contractors -->
+        <section class="py-24 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+                    <div class="order-2 lg:order-1 relative">
+                        <div class="grid grid-cols-2 gap-4">
+                            <img class="rounded-lg shadow-lg w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB22-yJPAZEzdxjTykU0b1H-uLOAflTF912Tb_0x-c_3ZfnvzGGMiGi7RQfPSlrq2Lsu-HNkmFGuZqNd-CXCcFPrCbA-6dw1lIUq0h6hck0vcAEtoV9TFDE1uvjGa4p0FwM6rWvG-I1Ym_zTeHnsRNEqBy_DIt0YzQQd_xmPtxR8WxsbpGWAcCE-KEpaL0bYbFJW8HmEgmSk1RRa9U1lJzQA7tgx5bb3A4wyRmrK4oISsfTd48Scr4Ltr0iWbrdJ7uRumYb9nyr" alt="Artisan Sewing"/>
+                            <img class="rounded-lg shadow-lg w-full h-64 object-cover mt-12" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASkwHcvVbSXv4N8zz1yzl5UyaO3uzwdlzBHdhiMcsmJ601hkejjnC2waplNICxxPuBKwayi047lurEmcdHHi7s71nn2DxkU-EauwLv5u8aMEOWQNoCxbo8oqU4nC3Ic_qZFr2cVFRGmq5wtkJqGcmoS_BMr60EOnpuCDD9SqDQV2w6IbCGCenNMXpwGS75XM2I2YZ4s4MKTm8ynliVCW9PrXua7Sb22XjFOZIrB5pPOcKufBQlA7jlVgma9ZcnW9WkZEHjfg3H" alt="Factory Floor"/>
+                        </div>
+                        <div class="absolute -z-10 -top-10 -left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+                    </div>
+                    <div class="order-1 lg:order-2 space-y-8">
+                        <span class="font-label uppercase text-xs font-semibold tracking-widest text-primary">Specialized Expertise</span>
+                        <h2 class="font-headline text-4xl font-bold">Industrial Sewing Contractors</h2>
+                        <p class="font-body text-lg text-on-surface-variant leading-relaxed">
                             Our team of master contractors represents the pinnacle of technical sewing expertise. We handle everything from heavy-duty industrial covers to intricate technical apparel, ensuring every stitch meets rigorous Canadian and Australian quality standards.
                         </p>
-<ul class="space-y-4 pt-4">
-<li class="flex items-start space-x-3">
-<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
-<div>
-<h4 class="font-headline font-bold">Technical Precision</h4>
-<p class="font-body text-sm text-on-surface-variant">Automated and hand-finished solutions for complex geometries.</p>
-</div>
-</li>
-<li class="flex items-start space-x-3">
-<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
-<div>
-<h4 class="font-headline font-bold">Volume Scalability</h4>
-<p class="font-body text-sm text-on-surface-variant">Seamlessly transition from prototyping to large-scale production runs.</p>
-</div>
-</li>
-<li class="flex items-start space-x-3">
-<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
-<div>
-<h4 class="font-headline font-bold">Rigorous QA</h4>
-<p class="font-body text-sm text-on-surface-variant">Multi-stage inspection protocols to ensure zero-defect delivery.</p>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<!-- Events & FAQ Section -->
-<section class="bg-surface-container py-24">
-<div class="max-w-7xl mx-auto px-6">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
-<!-- Events / News -->
-<div class="lg:col-span-5 space-y-12">
-<div>
-<span class="font-label uppercase text-xs font-semibold tracking-widest text-primary">What's New</span>
-<h2 class="font-headline text-4xl font-bold mt-2">Events &amp; News</h2>
-</div>
-<div class="space-y-8">
-<article class="group cursor-pointer">
-<span class="font-label text-xs text-on-surface-variant uppercase tracking-wider">October 12, 2024</span>
-<h3 class="font-headline text-xl font-bold group-hover:text-primary transition-colors mt-1">Sydney Textiles Expo: Sustainable Manufacturing Showcase</h3>
-<p class="font-body text-sm text-on-surface-variant mt-2">Joining global leaders to discuss the future of zero-waste textile production in the APAC region.</p>
-</article>
-<article class="group cursor-pointer">
-<span class="font-label text-xs text-on-surface-variant uppercase tracking-wider">September 28, 2024</span>
-<h3 class="font-headline text-xl font-bold group-hover:text-primary transition-colors mt-1">New Facility Launch: Montreal Innovation Hub</h3>
-<p class="font-body text-sm text-on-surface-variant mt-2">Expanding our Canadian footprint with a state-of-the-art R&amp;D center for high-performance fabrics.</p>
-</article>
-</div>
-<button class="text-primary font-label text-xs uppercase font-bold flex items-center space-x-2 hover:translate-x-1 transition-transform" onclick="location.href='events-news.html'">
-<span>View All Updates</span>
-<span class="material-symbols-outlined text-sm">arrow_forward</span>
-</button>
-</div>
-<!-- FAQ -->
-<div class="lg:col-span-7 space-y-12">
-<div>
-<span class="font-label uppercase text-xs font-semibold tracking-widest text-primary">Inquiries</span>
-<h2 class="font-headline text-4xl font-bold mt-2">Common Questions</h2>
-</div>
-<div class="space-y-4">
-<div class="bg-surface-container-lowest p-6 rounded-lg ghost-border">
-<h4 class="font-headline font-bold mb-2">What is your typical turnaround time for bulk orders?</h4>
-<p class="font-body text-on-surface-variant text-sm">Timelines vary by complexity, but standard industrial runs typically range from 4 to 8 weeks including QA. Expedited tracks are available for established partners.</p>
-</div>
-<div class="bg-surface-container-lowest p-6 rounded-lg ghost-border">
-<h4 class="font-headline font-bold mb-2">Do you handle international shipping between Canada and Australia?</h4>
-<p class="font-body text-on-surface-variant text-sm">Yes, we provide integrated logistics solutions for all trans-pacific shipments, including customs clearance and door-to-door tracking.</p>
-</div>
-<div class="bg-surface-container-lowest p-6 rounded-lg ghost-border">
-<h4 class="font-headline font-bold mb-2">What certifications do your manufacturing processes hold?</h4>
-<p class="font-body text-on-surface-variant text-sm">We are ISO 9001 certified and strictly adhere to environmental standards across both our Canadian and Australian facilities.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- CTA Section -->
-<section class="py-24">
-<div class="max-w-7xl mx-auto px-6">
-<div class="textile-gradient rounded-xl p-12 md:p-24 text-center relative overflow-hidden">
-<div class="relative z-10 space-y-8">
-<h2 class="font-headline text-4xl md:text-6xl font-extrabold text-white leading-tight">Ready to start your <br/> next craft?</h2>
-<div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-6">
-<button class="bg-white text-primary px-10 py-4 rounded-md font-label uppercase text-sm font-bold shadow-lg hover:bg-surface-container-lowest transition-all active:scale-[0.98]" onclick="location.href='contact.html'">Request a Quote</button>
-<button class="border border-white/30 bg-white/10 backdrop-blur-sm text-white px-10 py-4 rounded-md font-label uppercase text-sm font-bold hover:bg-white/20 transition-all" onclick="location.href='contact.html'">Partner With Us</button>
-</div>
-</div>
-<!-- Decorative Element -->
-<div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
-<div class="absolute bottom-0 left-0 w-64 h-64 bg-black/10 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer id="global-footer"></footer>
-<script src="site-structure.js"></script>
-</body></html>
+                        <ul class="space-y-4 pt-4">
+                            <li class="flex items-start space-x-3">
+                                <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                <div>
+                                    <h4 class="font-headline font-bold">Technical Precision</h4>
+                                    <p class="font-body text-sm text-on-surface-variant">Automated and hand-finished solutions for complex geometries.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                <div>
+                                    <h4 class="font-headline font-bold">Volume Scalability</h4>
+                                    <p class="font-body text-sm text-on-surface-variant">Seamlessly transition from prototyping to large-scale production runs.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                <div>
+                                    <h4 class="font-headline font-bold">Rigorous QA</h4>
+                                    <p class="font-body text-sm text-on-surface-variant">Multi-stage inspection protocols to ensure zero-defect delivery.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Events & FAQ -->
+        <section class="bg-surface-container-low py-24">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+                    <div class="lg:col-span-5 space-y-12">
+                        <div>
+                            <span class="font-label uppercase text-xs font-semibold tracking-widest text-primary">What's New</span>
+                            <h2 class="font-headline text-4xl font-bold mt-2">Events &amp; News</h2>
+                        </div>
+                        <div class="space-y-8">
+                            <article class="group cursor-pointer">
+                                <span class="font-label text-xs text-on-surface-variant uppercase tracking-wider">October 12, 2024</span>
+                                <h3 class="font-headline text-xl font-bold group-hover:text-primary transition-colors mt-1">Sydney Textiles Expo: Sustainable Manufacturing Showcase</h3>
+                                <p class="font-body text-sm text-on-surface-variant mt-2">Joining global leaders to discuss the future of zero-waste textile production in the APAC region.</p>
+                            </article>
+                            <article class="group cursor-pointer">
+                                <span class="font-label text-xs text-on-surface-variant uppercase tracking-wider">September 28, 2024</span>
+                                <h3 class="font-headline text-xl font-bold group-hover:text-primary transition-colors mt-1">New Facility Launch: Montreal Innovation Hub</h3>
+                                <p class="font-body text-sm text-on-surface-variant mt-2">Expanding our Canadian footprint with a state-of-the-art R&amp;D center for high-performance fabrics.</p>
+                            </article>
+                        </div>
+                        <button class="text-primary font-label text-xs uppercase font-bold flex items-center space-x-2 hover:translate-x-1 transition-transform" onclick="location.href='events-news.html'">
+                            <span>View All Updates</span>
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </button>
+                    </div>
+                    <div class="lg:col-span-7 space-y-12">
+                        <div>
+                            <span class="font-label uppercase text-xs font-semibold tracking-widest text-primary">Inquiries</span>
+                            <h2 class="font-headline text-4xl font-bold mt-2">Common Questions</h2>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="bg-surface-container-lowest p-6 rounded-lg border border-slate-100">
+                                <h4 class="font-headline font-bold mb-2">What is your typical turnaround time for bulk orders?</h4>
+                                <p class="font-body text-on-surface-variant text-sm">Timelines vary by complexity, but standard industrial runs typically range from 4 to 8 weeks including QA. Expedited tracks are available for established partners.</p>
+                            </div>
+                            <div class="bg-surface-container-lowest p-6 rounded-lg border border-slate-100">
+                                <h4 class="font-headline font-bold mb-2">Do you handle international shipping between Canada and Australia?</h4>
+                                <p class="font-body text-on-surface-variant text-sm">Yes, we provide integrated logistics solutions for all trans-pacific shipments, including customs clearance and door-to-door tracking.</p>
+                            </div>
+                            <div class="bg-surface-container-lowest p-6 rounded-lg border border-slate-100">
+                                <h4 class="font-headline font-bold mb-2">What certifications do your manufacturing processes hold?</h4>
+                                <p class="font-body text-on-surface-variant text-sm">We are ISO 9001 certified and strictly adhere to environmental standards across both our Canadian and Australian facilities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- CTA Section -->
+        <section class="py-24">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="textile-gradient rounded-xl p-12 md:p-24 text-center relative overflow-hidden">
+                    <div class="relative z-10 space-y-8">
+                        <h2 class="font-headline text-4xl md:text-6xl font-extrabold text-white leading-tight">Ready to start your <br/> next craft?</h2>
+                        <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-6">
+                            <button class="bg-white text-primary px-10 py-4 rounded-md font-label uppercase text-sm font-bold shadow-lg hover:bg-surface-container-lowest transition-all active:scale-[0.98]" onclick="location.href='contact.html'">Request a Quote</button>
+                            <button class="border border-white/30 bg-white/10 backdrop-blur-sm text-white px-10 py-4 rounded-md font-label uppercase text-sm font-bold hover:bg-white/20 transition-all" onclick="location.href='contact.html'">Partner With Us</button>
+                        </div>
+                    </div>
+                    <div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+                    <div class="absolute bottom-0 left-0 w-64 h-64 bg-black/10 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="global-footer"></footer>
+</body>
+</html>

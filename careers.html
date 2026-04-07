@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Careers | Cotton Craft - Join Our Global Team</title>
+    <meta name="description" content="Join Cotton Craft's global team of textile experts. Explore job opportunities in textile engineering, production, fashion design, and more. Apply now!"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200..900&family=Red+Hat+Display:wght@700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#006096",
+                        "primary-container": "#0c7abb",
+                        "secondary": "#3a59b2",
+                        "background": "#faf8ff",
+                        "surface": "#faf8ff",
+                        "on-surface": "#181b25",
+                        "on-surface-variant": "#404750",
+                        "outline": "#707881",
+                        "outline-variant": "#c0c7d2",
+                        "primary-fixed-dim": "#96ccff",
+                        "primary-fixed": "#cee5ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Red Hat Display"],
+                        "body": ["Lexend Deca"],
+                        "label": ["Lexend Deca"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .fabric-glass { background: rgba(224, 225, 240, 0.4); backdrop-filter: blur(12px); }
+        .job-card { position: relative; overflow: hidden; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+        .job-card:hover { transform: translateY(-10px); border-color: #006096; box-shadow: 0 30px 60px -12px rgba(0, 96, 150, 0.15); }
+        .job-card::before { content: ''; position: absolute; top: 0; left: 0; width: 0%; height: 4px; background: #006096; transition: width 0.4s ease; }
+        .job-card:hover::before { width: 100%; }
+        .modal-overlay { opacity: 0; pointer-events: none; transition: opacity 0.3s ease; }
+        .modal-overlay.active { opacity: 1; pointer-events: auto; }
+        .modal-content { transform: scale(0.9) translateY(20px); transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+        .modal-overlay.active .modal-content { transform: scale(1) translateY(0); }
+        
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .logo-slider-track { display: flex; width: max-content; animation: scroll 60s linear infinite; }
+        .logo-slider-track:hover { animation-play-state: paused; }
+    </style>
+<script src='site-structure.js'></script>
+</head>
+<body class="bg-background text-on-surface font-body antialiased">
+    <!-- TopNavBar -->
+    <header id="global-header"></header>
+
+    <!-- Hero Section -->
+    <section class="relative py-32 bg-on-surface overflow-hidden">
+        <div class="absolute inset-0 z-0 text-center flex items-center justify-center">
+            <img class="w-full h-full object-cover opacity-30 grayscale contrast-125" src="apparel_hero_main.png" alt="Join Our Team"/>
+            <div class="absolute inset-0 bg-primary/20 mix-blend-overlay"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-on-surface/80 via-on-surface/40 to-on-surface"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 text-center">
+            <span class="font-label text-[10px] uppercase font-bold text-primary-fixed-dim tracking-[0.5em] mb-6 block">Join the Legacy</span>
+            <h1 class="font-headline text-5xl md:text-7xl font-extrabold text-white mb-6">
+                Build Your Future <br/>
+                <span class="text-primary-fixed-dim italic font-light">With Cotton Craft.</span>
+            </h1>
+            <p class="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed italic border-l-2 border-primary-fixed-dim/30 pl-8 inline-block">
+                We are looking for passionate individuals to join our global manufacturing network. <br class="hidden md:block"/> Shape the future of textiles with us.
+            </p>
+        </div>
+    </section>
+
+    <!-- Careers Grid -->
+    <section class="py-24 bg-surface">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+                <div class="max-w-xl">
+                    <div class="flex items-center gap-3 text-primary uppercase text-[10px] font-bold tracking-[0.4em] mb-4">
+                        <span class="w-8 h-[1px] bg-primary"></span>
+                        Opportunities
+                    </div>
+                    <h2 class="font-headline text-4xl md:text-5xl font-bold text-slate-900 leading-none mb-6">Current Openings</h2>
+                    <p class="text-slate-500 font-medium italic">Discover your next career move in a professional, innovative, and growing organization.</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="text-slate-400 text-[10px] font-bold uppercase tracking-widest mr-2">Filter:</span>
+                    <button class="px-5 py-2.5 bg-white border border-slate-200 rounded-full text-[10px] font-bold uppercase tracking-wider text-slate-600 hover:border-primary hover:text-primary transition-all active:scale-95 shadow-sm">All Roles</button>
+                    <button class="px-5 py-2.5 bg-white border border-slate-200 rounded-full text-[10px] font-bold uppercase tracking-wider text-slate-600 hover:border-primary hover:text-primary transition-all active:scale-95 shadow-sm">Industrial</button>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="jobs-grid">
+                <!-- Data will be populated via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Recruitment Partners -->
+    <section class="py-24 bg-white border-t border-slate-100 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 mb-12">
+            <div class="text-center">
+                <div class="inline-flex items-center gap-3 text-primary uppercase text-[10px] font-bold tracking-[0.4em] mb-4">
+                    <span class="w-8 h-[1px] bg-primary"></span>
+                    Trusted By Experts
+                    <span class="w-8 h-[1px] bg-primary"></span>
+                </div>
+                <h2 class="font-headline text-4xl font-bold text-slate-900 mb-4">Our Global Recruitment Partners</h2>
+                <p class="text-slate-500 font-medium italic">Working with the world's leading talent acquisition networks to build an exceptional international team.</p>
+            </div>
+        </div>
+        
+        <div class="relative flex items-center">
+            <!-- Left Fade Overlay -->
+            <div class="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+            <!-- Right Fade Overlay -->
+            <div class="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+
+            <div class="logo-slider-track flex items-center gap-24 py-8">
+                <!-- Set 1 -->
+                <div class="flex items-center gap-24">
+                    <img src="Recruitment%20Partners%20LOgo/1693557381600.jpg" alt="Partner Logo" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/2.PNG" alt="Partner Logo 2" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/3.PNG" alt="Partner Logo 3" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/4.JPG.jpeg" alt="Partner Logo 4" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/5.JPG.jpeg" alt="Partner Logo 5" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/6.JPG.jpeg" alt="Partner Logo 6" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/Artboard-1GP-LOGO-e1739172944544.png" alt="Partner Logo 7" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/Global+Partners.webp" alt="Partner Logo 8" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/Logo-05.png" alt="Partner Logo 9" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/Prisn-Global-HR-Logo.png" alt="Partner Logo 10" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/Untitled-design-12-1.png" alt="Partner Logo 11" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/cropped-GLOBAL-FULL-LOGO.png" alt="Partner Logo 12" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/cropped-Image1.png" alt="Partner Logo 13" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/cropped-global-rec-sia.png" alt="Partner Logo 14" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/og-image.png" alt="Partner Logo 15" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/undutchables-recruitment-partner.png.webp" alt="Partner Logo 16" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                </div>
+                <!-- Set 2 -->
+                <div class="flex items-center gap-24">
+                    <img src="Recruitment%20Partners%20LOgo/1693557381600.jpg" alt="Partner Logo" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/2.PNG" alt="Partner Logo 2" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/3.PNG" alt="Partner Logo 3" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/4.JPG.jpeg" alt="Partner Logo 4" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/5.JPG.jpeg" alt="Partner Logo 5" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/6.JPG.jpeg" alt="Partner Logo 6" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/Artboard-1GP-LOGO-e1739172944544.png" alt="Partner Logo 7" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/Global+Partners.webp" alt="Partner Logo 8" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/Logo-05.png" alt="Partner Logo 9" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/Prisn-Global-HR-Logo.png" alt="Partner Logo 10" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/Untitled-design-12-1.png" alt="Partner Logo 11" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/cropped-GLOBAL-FULL-LOGO.png" alt="Partner Logo 12" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/cropped-Image1.png" alt="Partner Logo 13" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/cropped-global-rec-sia.png" alt="Partner Logo 14" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/og-image.png" alt="Partner Logo 15" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                    <img src="Recruitment%20Partners%20LOgo/undutchables-recruitment-partner.png.webp" alt="Partner Logo 16" class="h-14 w-auto object-contain hover:scale-110 transition-transform duration-500 cursor-pointer">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Popup Modal -->
+    <div id="applyModal" class="modal-overlay fixed inset-0 z-[200] flex items-center justify-center p-6 bg-slate-950/80 backdrop-blur-sm">
+        <div class="modal-content bg-white w-full max-w-lg rounded-2xl overflow-hidden shadow-2xl relative">
+            <!-- Modal Header -->
+            <div class="p-8 border-b border-slate-100 bg-primary text-white relative">
+                <button onclick="closeModal()" class="absolute top-6 right-6 w-10 h-10 rounded-full hover:bg-white/20 flex items-center justify-center transition-colors">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+                <div class="inline-flex px-3 py-1 bg-white/10 rounded-full text-[9px] font-bold uppercase tracking-[0.2em] mb-4 border border-white/20">Career Application</div>
+                <h3 class="font-headline text-3xl font-bold leading-tight">Apply for Position</h3>
+                <p class="text-sky-100 text-[11px] mt-2 uppercase tracking-[0.25em] font-bold opacity-90 italic" id="modal-job-title">Position Title</p>
+            </div>
+
+            <!-- Modal Form -->
+            <form class="p-8 space-y-6" onsubmit="event.preventDefault(); alert('We have received your application. Our HR team will contact you soon!'); closeModal();">
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="space-y-2">
+                        <label class="font-label text-[10px] font-bold uppercase tracking-widest text-slate-400">First Name</label>
+                        <input type="text" required placeholder="John" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary focus:ring-4 focus:ring-primary/5 transition-all text-slate-900 placeholder:text-slate-300">
+                    </div>
+                    <div class="space-y-2">
+                        <label class="font-label text-[10px] font-bold uppercase tracking-widest text-slate-400">Last Name</label>
+                        <input type="text" required placeholder="Doe" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary focus:ring-4 focus:ring-primary/5 transition-all text-slate-900 placeholder:text-slate-300">
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="space-y-2">
+                        <label class="font-label text-[10px] font-bold uppercase tracking-widest text-slate-400">Email Address</label>
+                        <input type="email" required placeholder="john@example.com" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary focus:ring-4 focus:ring-primary/5 transition-all text-slate-900 placeholder:text-slate-300">
+                    </div>
+                    <div class="space-y-2">
+                        <label class="font-label text-[10px] font-bold uppercase tracking-widest text-slate-400">Phone Number</label>
+                        <input type="tel" required placeholder="+94 77 XXXXXXX" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary focus:ring-4 focus:ring-primary/5 transition-all text-slate-900 placeholder:text-slate-300">
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <label class="font-label text-[10px] font-bold uppercase tracking-widest text-slate-400">Resume / CV (PDF)</label>
+                    <div class="relative group">
+                        <input type="file" accept=".pdf" required class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10">
+                        <div class="w-full bg-slate-50 border-2 border-dashed border-slate-200 rounded-2xl px-6 py-8 text-center group-hover:border-primary group-hover:bg-primary/5 transition-all">
+                            <span class="material-symbols-outlined text-slate-300 text-3xl mb-2 group-hover:text-primary transition-colors">cloud_upload</span>
+                            <p class="text-[10px] font-bold uppercase tracking-widest text-slate-500">Drop your file or <span class="text-primary underline">browse</span></p>
+                            <p class="text-[9px] text-slate-400 mt-1 uppercase">Max size: 5MB (PDF only)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <label class="font-label text-[10px] font-bold uppercase tracking-widest text-slate-400">Message to Hiring Team</label>
+                    <textarea rows="3" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary focus:ring-4 focus:ring-primary/5 transition-all text-slate-900 placeholder:text-slate-300" placeholder="A brief about your expertise..."></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-slate-950 text-white py-5 rounded-2xl font-label text-[11px] font-bold uppercase tracking-[0.3em] hover:bg-primary hover:shadow-[0_20px_40px_-10px_rgba(0,96,150,0.4)] transition-all active:scale-[0.98] mt-4">
+                    Submit Application
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="global-footer"></footer>
+    
+    <script>
+        const jobs = [
+            { title: "Textile Engineer", dept: "Engineering", type: "Full-Time", loc: "Sydney, Australia", desc: "Designing and developing innovative fabric structures and manufacturing processes.", icon: "settings_input_component" },
+            { title: "Production Manager", dept: "Operations", type: "Full-Time", loc: "Toronto, Canada", desc: "Overseeing daily factory operations to ensure maximum efficiency and quality output.", icon: "precision_manufacturing" },
+            { title: "Supply Chain Coordinator", dept: "Logistics", type: "Full-Time", loc: "Sydney, Australia", desc: "Managing logistics and inventory flow from raw materials to finished products.", icon: "account_tree" },
+            { title: "Quality Control Inspector", dept: "QA/QC", type: "Full-Time", loc: "Toronto, Canada", desc: "Ensuring every garment and fabric roll meets our rigorous international standards.", icon: "verified_user" },
+            { title: "Merchandiser", dept: "Production", type: "Full-Time", loc: "Sydney, Australia", desc: "Bridging the gap between production and sales with strategic product planning.", icon: "store" },
+            { title: "Fashion Designer", dept: "Design", type: "Full-Time", loc: "Toronto, Canada", desc: "Creating trend-setting apparel designs that combine aesthetic appeal with technical functionality.", icon: "architecture" },
+            { title: "Accountant", dept: "Finance", type: "Full-Time", loc: "Sydney, Australia", desc: "Managing financial records, budgeting, and fiscal reporting for our industrial operations.", icon: "calculate" },
+            { title: "Warehouse Worker", dept: "Logistics", type: "Full-Time", loc: "Toronto, Canada", desc: "Handling material storage, organization, and dispatching in our modern distribution center.", icon: "inventory_2" },
+            { title: "Machine Operator", dept: "Production", type: "Full-Time", loc: "Sydney, Australia", desc: "Calibrating and running state-of-the-art textile machinery for precision manufacturing.", icon: "settings" },
+            { title: "Fabric Cutter", dept: "Production", type: "Full-Time", loc: "Toronto, Canada", desc: "Executing precise material cutting based on technical specifications and patterns.", icon: "content_cut" },
+            { title: "Production Assistant", dept: "Operations", type: "Full-Time", loc: "Sydney, Australia", desc: "Supporting line operations and administrative tasks within the manufacturing floor.", icon: "support_agent" },
+            { title: "Ironing & Presser", dept: "Finishing", type: "Full-Time", loc: "Toronto, Canada", desc: "Providing the final professional finish to our high-quality garment collections.", icon: "dry_cleaning" },
+            { title: "Driver", dept: "Logistics", type: "Full-Time", loc: "Sydney, Australia", desc: "Safely transporting raw materials and finished goods between facilities and clients.", icon: "local_shipping" },
+            { title: "Factory Security Guard", dept: "Security", type: "Full-Time", loc: "Toronto, Canada", desc: "Maintaining a safe and secure environment for our staff and company assets.", icon: "security" },
+            { title: "Outlet Sales Clerk", dept: "Retail", type: "Part-Time", loc: "Sydney, Australia", desc: "Providing exceptional customer service and product knowledge at our retail outlets.", icon: "shopping_cart" },
+            { title: "Maintenance Helper", dept: "Facility", type: "Full-Time", loc: "Toronto, Canada", desc: "Ensuring all equipment and facility systems are functioning at peak performance.", icon: "build" }
+        ];
+
+        const grid = document.getElementById('jobs-grid');
+        jobs.forEach(job => {
+            const card = document.createElement('div');
+            card.className = "job-card group bg-white p-7 rounded-[2rem] border border-slate-100 shadow-[0_12px_40px_-16px_rgba(0,0,0,0.06)] flex flex-col h-full";
+            card.innerHTML = `
+                <div class="flex-grow">
+                    <div class="flex justify-between items-start mb-8">
+                        <div class="w-14 h-14 bg-primary/5 text-primary rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:bg-primary group-hover:text-white group-hover:scale-110 shadow-inner">
+                            <span class="material-symbols-outlined text-3xl">${job.icon}</span>
+                        </div>
+                        <span class="px-4 py-1.5 bg-slate-100 text-slate-600 rounded-full text-[9px] font-bold uppercase tracking-wider">${job.type}</span>
+                    </div>
+                    
+                    <div class="mb-5">
+                        <p class="text-primary text-[9px] font-bold uppercase tracking-[0.3em] mb-2 px-1">${job.dept}</p>
+                        <h3 class="font-headline text-2xl font-bold text-slate-900 mb-3 group-hover:text-primary transition-colors">${job.title}</h3>
+                        <div class="flex items-center gap-2 text-slate-400">
+                            <span class="material-symbols-outlined text-[16px] text-primary">location_on</span>
+                            <span class="text-[10px] font-bold uppercase tracking-widest">${job.loc}</span>
+                        </div>
+                    </div>
+
+                    <p class="text-slate-500 text-[13px] leading-relaxed mb-10 italic font-medium bg-slate-50/70 p-5 rounded-2xl border border-slate-50 group-hover:bg-white transition-colors">
+                        "${job.desc}"
+                    </p>
+                </div>
+
+                <div class="mt-auto pt-4">
+                    <button onclick="openModal('${job.title}')" class="w-full bg-slate-950 text-white py-4 rounded-xl font-label text-[11px] font-bold uppercase tracking-[0.3em] hover:bg-primary hover:shadow-[0_20px_40px_-10px_rgba(0,96,150,0.4)] transition-all active:scale-[0.98] flex items-center justify-center gap-2">
+                        Apply Position
+                        <span class="material-symbols-outlined text-base">east</span>
+                    </button>
+                </div>
+            `;
+            grid.appendChild(card);
+        });
+
+        function openModal(title) {
+            document.getElementById('modal-job-title').textContent = title;
+            document.getElementById('applyModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('applyModal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+
+        // Close on click outside
+        document.getElementById('applyModal').addEventListener('click', (e) => {
+            if (e.target === document.getElementById('applyModal')) closeModal();
+        });
+    </script>
+</body>
+</html>
+
+
